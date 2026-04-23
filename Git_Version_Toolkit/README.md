@@ -2,6 +2,8 @@
 
 A reusable Git version management toolkit for any local Git project.
 
+Current version: `1.0.0`
+
 ## Contents
 
 ```text
@@ -70,6 +72,10 @@ If the target project already contains a `Git_Version_Toolkit` folder:
 ## Release Package
 
 The `release/` directory contains a zip package that can be copied and extracted into other projects.
+
+Current release package:
+
+- `release/Git_Version_Toolkit_v1.0.0.zip`
 
 ## Main Files
 
