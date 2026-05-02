@@ -1,0 +1,35 @@
+tenant_id: demo_tenant
+
+users:
+  user_pm:
+    groups: [project_alpha_group, team_product]
+    role: editor
+  user_rd:
+    groups: [project_alpha_group, team_rd]
+    role: editor
+  user_qa:
+    groups: [project_alpha_group, team_qa]
+    role: editor
+  user_ops:
+    groups: [project_alpha_group, team_ops]
+    role: viewer
+  user_lead:
+    groups: [project_alpha_group, team_product, team_rd, team_qa]
+    role: admin
+  user_external:
+    groups: []
+    role: viewer
+
+sources:
+  doc_alpha_prd:
+    allowed_groups: [project_alpha_group, team_product, team_rd]
+  minutes_alpha_review:
+    allowed_groups: [project_alpha_group]
+  msg_alpha_group:
+    allowed_groups: [project_alpha_group]
+  tasks_alpha:
+    allowed_groups: [project_alpha_group]
+  calendar_alpha:
+    allowed_groups: [project_alpha_group]
+  doc_private_ops:
+    allowed_groups: [team_ops]

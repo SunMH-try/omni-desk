@@ -1,0 +1,427 @@
+{
+  "nodes": [
+    {
+      "node_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+      "node_type": "source",
+      "label": "OpenClaw 智能会议助手 PRD v1.0",
+      "metadata": {
+        "source_type": "docs",
+        "url": "https://feishu.cn/docx/HY9qdEto7o57R6xinZiczDMdntb"
+      }
+    },
+    {
+      "node_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "node_type": "source",
+      "label": "OpenClaw 项目周会纪要 2026-04-29",
+      "metadata": {
+        "source_type": "docs",
+        "url": "https://feishu.cn/docx/VGqkdzLFEovvDYxyG2qc014Inyf"
+      }
+    },
+    {
+      "node_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "node_type": "source",
+      "label": "OpenClaw 项目风险跟踪",
+      "metadata": {
+        "source_type": "docs",
+        "url": "https://feishu.cn/docx/S3kLdVsX5oJzFPxscf5cVbsknne"
+      }
+    },
+    {
+      "node_id": "msg_oc_ba4503553a2a446df1f5a4bf587f7620",
+      "node_type": "source",
+      "label": "测试企业 - omni-desk",
+      "metadata": {
+        "source_type": "messages",
+        "url": "https://feishu.cn/im/chat/oc_ba4503553a2a446df1f5a4bf587f7620"
+      }
+    },
+    {
+      "node_id": "atom_29e703e0",
+      "node_type": "atom",
+      "label": "OpenClaw智能会议助手v1.0旨在替代人工整理会议纪要，通过AI能力帮助团队减少信息遗漏。",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_fd77f164",
+      "node_type": "atom",
+      "label": "OpenClaw v1.0核心功能包含会前背景卡片、会后任务预览、周报洞察、风险预警四类。",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_10fac0be",
+      "node_type": "atom",
+      "label": "OpenClaw v1.0里程碑：P0联调2026-04-20至30，P1测试2026-05-01至15，P2灰度上线2",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_f5ce2ab8",
+      "node_type": "atom",
+      "label": "飞书API权限审批流程较长，已导致OpenClaw联调阶段延期3天。",
+      "metadata": {
+        "atom_type": "Risk",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_a91e0bed",
+      "node_type": "atom",
+      "label": "OpenClaw向量索引构建依赖GPU资源，测试环境暂用CPU替代，性能待验证。",
+      "metadata": {
+        "atom_type": "Risk",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_008214c5",
+      "node_type": "atom",
+      "label": "OpenClaw项目A端混合检索（BM25 + 语义向量 + RRF）已完成，本地测试通过",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_75ad94c5",
+      "node_type": "atom",
+      "label": "OpenClaw项目A端飞书真实数据接入正在进行，权限问题将于2026-04-29解决",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_065dada5",
+      "node_type": "atom",
+      "label": "OpenClaw项目A端向量索引已支持磁盘缓存，服务重启无需重新构建",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_f3a4257a",
+      "node_type": "atom",
+      "label": "OpenClaw项目B端四个触发场景（会前/会后/周报/风险）均已与A端联调通过",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_551d5e00",
+      "node_type": "atom",
+      "label": "OpenClaw项目B端Mock模式切换Real模式的验证工作正在进行中",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_5d4da95a",
+      "node_type": "atom",
+      "label": "OpenClaw项目决定A端数据源接入优先覆盖文档和群消息，日历和任务作为补充",
+      "metadata": {
+        "atom_type": "Decision",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_9d7a1690",
+      "node_type": "atom",
+      "label": "OpenClaw项目决定下周完成端到端演示，需准备汇报材料",
+      "metadata": {
+        "atom_type": "Decision",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_09887de0",
+      "node_type": "atom",
+      "label": "孙鸣皓完成飞书真实数据接入",
+      "metadata": {
+        "atom_type": "ActionItem",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "孙鸣皓",
+      "node_type": "person",
+      "label": "孙鸣皓",
+      "metadata": {}
+    },
+    {
+      "node_id": "atom_6edd2cc5",
+      "node_type": "atom",
+      "label": "朱嘉骏更新B端触发逻辑适配真实数据格式",
+      "metadata": {
+        "atom_type": "ActionItem",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "朱嘉骏",
+      "node_type": "person",
+      "label": "朱嘉骏",
+      "metadata": {}
+    },
+    {
+      "node_id": "atom_1571f386",
+      "node_type": "atom",
+      "label": "孙鸣皓准备演示PPT",
+      "metadata": {
+        "atom_type": "ActionItem",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_8482901d",
+      "node_type": "atom",
+      "label": "OpenClaw项目飞书权限审批延迟为高风险，已通过测试企业绕过，2026-04-29解决，负责人孙鸣皓",
+      "metadata": {
+        "atom_type": "Risk",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_7d8db801",
+      "node_type": "atom",
+      "label": "OpenClaw项目向量模型性能为中风险，已加磁盘缓存解决二次启动重建问题，负责人孙鸣皓",
+      "metadata": {
+        "atom_type": "Risk",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_d7da068d",
+      "node_type": "atom",
+      "label": "OpenClaw项目B端回调公网访问为中风险，待处理，负责人朱嘉骏",
+      "metadata": {
+        "atom_type": "Risk",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_5d8680f5",
+      "node_type": "atom",
+      "label": "朱嘉骏需通过ngrok或部署公网的方式解决B端回调公网访问问题",
+      "metadata": {
+        "atom_type": "ActionItem",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_d0dcc421",
+      "node_type": "atom",
+      "label": "已添加磁盘缓存解决体验差问题，二次启动无需重建，负责人为孙鸣皓",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_2f5c8c39",
+      "node_type": "atom",
+      "label": "B端回调公网访问为中风险，本地无法接收飞书回调，影响机器人主动推送功能本地测试",
+      "metadata": {
+        "atom_type": "Risk",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_d7c5a868",
+      "node_type": "atom",
+      "label": "需使用ngrok或将服务部署到公网解决B端回调公网访问问题，负责人为朱嘉骏",
+      "metadata": {
+        "atom_type": "ActionItem",
+        "confidence": 1.0
+      }
+    },
+    {
+      "node_id": "atom_aef1150f",
+      "node_type": "atom",
+      "label": "存在标注日期为2026-04-29的OpenClaw项目周会纪要",
+      "metadata": {
+        "atom_type": "Fact",
+        "confidence": 1.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+      "to": "atom_29e703e0",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+      "to": "atom_fd77f164",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+      "to": "atom_10fac0be",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+      "to": "atom_f5ce2ab8",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+      "to": "atom_a91e0bed",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_008214c5",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_75ad94c5",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_065dada5",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_f3a4257a",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_551d5e00",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_5d4da95a",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_9d7a1690",
+      "relation": "contains"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_09887de0",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_09887de0",
+      "to": "孙鸣皓",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_6edd2cc5",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_6edd2cc5",
+      "to": "朱嘉骏",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_1571f386",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_1571f386",
+      "to": "孙鸣皓",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "to": "atom_8482901d",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_8482901d",
+      "to": "孙鸣皓",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "to": "atom_7d8db801",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_7d8db801",
+      "to": "孙鸣皓",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "to": "atom_d7da068d",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_d7da068d",
+      "to": "朱嘉骏",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "to": "atom_5d8680f5",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_5d8680f5",
+      "to": "朱嘉骏",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "to": "atom_d0dcc421",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_d0dcc421",
+      "to": "孙鸣皓",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "to": "atom_2f5c8c39",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_2f5c8c39",
+      "to": "朱嘉骏",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+      "to": "atom_d7c5a868",
+      "relation": "contains"
+    },
+    {
+      "from": "atom_d7c5a868",
+      "to": "朱嘉骏",
+      "relation": "assigned_to"
+    },
+    {
+      "from": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+      "to": "atom_aef1150f",
+      "relation": "contains"
+    }
+  ],
+  "evidence_count": 22
+}

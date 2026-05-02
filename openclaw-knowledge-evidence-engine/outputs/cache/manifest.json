@@ -1,0 +1,52 @@
+[
+  {
+    "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+    "source_type": "docs",
+    "title": "OpenClaw 智能会议助手 PRD v1.0",
+    "url": "https://feishu.cn/docx/HY9qdEto7o57R6xinZiczDMdntb",
+    "tenant_id": "omni_desk_test",
+    "project_id": "openclaw_project",
+    "permission_scope": [],
+    "updated_at": 7
+  },
+  {
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "source_type": "docs",
+    "title": "OpenClaw 项目周会纪要 2026-04-29",
+    "url": "https://feishu.cn/docx/VGqkdzLFEovvDYxyG2qc014Inyf",
+    "tenant_id": "omni_desk_test",
+    "project_id": "openclaw_project",
+    "permission_scope": [],
+    "updated_at": 6
+  },
+  {
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "source_type": "docs",
+    "title": "OpenClaw 项目风险跟踪",
+    "url": "https://feishu.cn/docx/S3kLdVsX5oJzFPxscf5cVbsknne",
+    "tenant_id": "omni_desk_test",
+    "project_id": "openclaw_project",
+    "permission_scope": [],
+    "updated_at": 5
+  },
+  {
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "source_type": "minutes",
+    "title": "OpenClaw 项目周会纪要 2026-04-29",
+    "url": "https://feishu.cn/docx/VGqkdzLFEovvDYxyG2qc014Inyf",
+    "tenant_id": "omni_desk_test",
+    "project_id": "openclaw_project",
+    "permission_scope": [],
+    "updated_at": 6
+  },
+  {
+    "source_id": "msg_oc_ba4503553a2a446df1f5a4bf587f7620",
+    "source_type": "messages",
+    "title": "测试企业 - omni-desk",
+    "url": "https://feishu.cn/im/chat/oc_ba4503553a2a446df1f5a4bf587f7620",
+    "tenant_id": "omni_desk_test",
+    "project_id": "openclaw_project",
+    "permission_scope": [],
+    "updated_at": "2026-04-28T16:26:03.542975+08:00"
+  }
+]

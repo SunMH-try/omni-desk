@@ -1,0 +1,31 @@
+{
+  "source_id": "calendar_alpha",
+  "source_type": "calendar",
+  "title": "Alpha 项目日历",
+  "url": "https://example.feishu.cn/calendar/alpha",
+  "tenant_id": "demo_tenant",
+  "project_id": "alpha_report_platform",
+  "permission_scope": ["project_alpha_group"],
+  "updated_at": "2026-04-23T18:00:00+08:00",
+  "events": [
+    {
+      "meeting_id": "meeting_alpha_weekly",
+      "title": "Alpha 项目周会",
+      "start_time": "2026-04-21T14:00:00+08:00",
+      "end_time": "2026-04-21T15:30:00+08:00",
+      "attendees": ["user_pm", "user_rd", "user_qa", "user_ops", "user_lead"],
+      "minutes_id": "minutes_alpha_review",
+      "recurrence": "weekly_monday"
+    },
+    {
+      "meeting_id": "meeting_alpha_weekly_next",
+      "title": "Alpha 项目周会（下周）",
+      "start_time": "2026-04-28T14:00:00+08:00",
+      "end_time": "2026-04-28T15:30:00+08:00",
+      "attendees": ["user_pm", "user_rd", "user_qa", "user_ops", "user_lead"],
+      "minutes_id": null,
+      "recurrence": "weekly_monday",
+      "agenda_draft": ["P0 联调完成情况", "压测进展", "P1 阶段准备", "风险回顾"]
+    }
+  ]
+}

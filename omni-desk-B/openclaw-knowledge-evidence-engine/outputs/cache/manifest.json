@@ -1,0 +1,64 @@
+[
+  {
+    "source_id": "doc_alpha_prd",
+    "source_type": "docs",
+    "title": "Alpha 智能报表平台 PRD v2.3",
+    "url": "https://example.feishu.cn/docx/alpha_prd_001",
+    "tenant_id": "demo_tenant",
+    "project_id": "alpha_report_platform",
+    "permission_scope": [
+      "project_alpha_group",
+      "team_product",
+      "team_rd"
+    ],
+    "updated_at": "2026-04-22T14:30:00+08:00"
+  },
+  {
+    "source_id": "minutes_alpha_review",
+    "source_type": "minutes",
+    "title": "Alpha 项目周会纪要 2026-04-21",
+    "url": "https://example.feishu.cn/minutes/alpha_weekly_2026_04_21",
+    "tenant_id": "demo_tenant",
+    "project_id": "alpha_report_platform",
+    "permission_scope": [
+      "project_alpha_group"
+    ],
+    "updated_at": "2026-04-21T18:00:00+08:00"
+  },
+  {
+    "source_id": "msg_alpha_group",
+    "source_type": "messages",
+    "title": "Alpha 项目群 - 近期讨论",
+    "url": "https://example.feishu.cn/im/chat/alpha_project_group",
+    "tenant_id": "demo_tenant",
+    "project_id": "alpha_report_platform",
+    "permission_scope": [
+      "project_alpha_group"
+    ],
+    "updated_at": "2026-04-23T17:45:00+08:00"
+  },
+  {
+    "source_id": "tasks_alpha",
+    "source_type": "tasks",
+    "title": "Alpha 项目任务列表",
+    "url": "https://example.feishu.cn/task/alpha_project",
+    "tenant_id": "demo_tenant",
+    "project_id": "alpha_report_platform",
+    "permission_scope": [
+      "project_alpha_group"
+    ],
+    "updated_at": "2026-04-23T18:00:00+08:00"
+  },
+  {
+    "source_id": "calendar_alpha",
+    "source_type": "calendar",
+    "title": "Alpha 项目日历",
+    "url": "https://example.feishu.cn/calendar/alpha",
+    "tenant_id": "demo_tenant",
+    "project_id": "alpha_report_platform",
+    "permission_scope": [
+      "project_alpha_group"
+    ],
+    "updated_at": "2026-04-23T18:00:00+08:00"
+  }
+]

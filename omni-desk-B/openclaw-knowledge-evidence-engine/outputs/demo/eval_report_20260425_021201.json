@@ -1,0 +1,46 @@
+{
+  "metrics": [
+    {
+      "metric": "action_item_precision",
+      "value": 0.4,
+      "threshold": 0.85,
+      "passed": false
+    },
+    {
+      "metric": "action_item_recall",
+      "value": 0.4,
+      "threshold": 0.85,
+      "passed": false
+    },
+    {
+      "metric": "citation_accuracy",
+      "value": 1.0,
+      "threshold": 0.9,
+      "passed": true
+    },
+    {
+      "metric": "hallucination_rate",
+      "value": 0.0,
+      "threshold": 0.05,
+      "passed": true
+    }
+  ],
+  "overall_pass": false,
+  "case_analysis": [
+    {
+      "name": "会前背景",
+      "query": "Alpha 项目周会需要关注哪些延期风险？",
+      "expected_evidence": "测试环境权限未开通导致联调延期"
+    },
+    {
+      "name": "会后任务",
+      "query": "会议纪要中的 Action Items",
+      "expected_items": 5
+    },
+    {
+      "name": "周报风险",
+      "query": "本周主要风险",
+      "expected_risk": "测试环境权限"
+    }
+  ]
+}

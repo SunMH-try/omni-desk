@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "A->B 会议上下文接口合约",
+  "description": "A端返回的会议上下文数据格式，用于会前背景卡片",
+  "type": "object",
+  "required": ["trace_id", "meeting_title", "meeting_time", "attendees"],
+  "properties": {
+    "trace_id": {
+      "type": "string",
+      "description": "全链路追踪ID"
+    },
+    "meeting_title": {
+      "type": "string",
+      "description": "会议标题"
+    },
+    "meeting_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "会议时间"
+    },
+    "attendees": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "参会人ID列表"
+    },
+    "last_meeting_resolutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["content", "evidence_id", "source_url", "status"],
+        "properties": {
+          "content": {"type": "string"},
+          "evidence_id": {"type": "string"},
+          "source_url": {"type": "string", "format": "uri"},
+          "status": {"type": "string", "enum": ["completed", "in_progress", "pending"]}
+        }
+      }
+    },
+    "unfinished_tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "owner", "deadline", "evidence_id", "source_url"],
+        "properties": {
+          "title": {"type": "string"},
+          "owner": {"type": "string"},
+          "deadline": {"type": "string", "format": "date"},
+          "evidence_id": {"type": "string"},
+          "source_url": {"type": "string", "format": "uri"}
+        }
+      }
+    },
+    "related_documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "evidence_id", "source_url", "updated_at"],
+        "properties": {
+          "title": {"type": "string"},
+          "evidence_id": {"type": "string"},
+          "source_url": {"type": "string", "format": "uri"},
+          "updated_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    "pending_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["content", "evidence_id", "source_url", "raised_by"],
+        "properties": {
+          "content": {"type": "string"},
+          "evidence_id": {"type": "string"},
+          "source_url": {"type": "string", "format": "uri"},
+          "raised_by": {"type": "string"}
+        }
+      }
+    },
+    "risk_reminders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["content", "evidence_id", "source_url", "level"],
+        "properties": {
+          "content": {"type": "string"},
+          "evidence_id": {"type": "string"},
+          "source_url": {"type": "string", "format": "uri"},
+          "level": {"type": "string", "enum": ["high", "medium", "low"]}
+        }
+      }
+    }
+  }
+}

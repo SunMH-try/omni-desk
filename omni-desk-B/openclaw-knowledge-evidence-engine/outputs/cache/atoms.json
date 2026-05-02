@@ -1,0 +1,797 @@
+[
+  {
+    "atom_id": "atom_820c95de",
+    "atom_type": "Fact",
+    "summary": "Alpha智能报表平台旨在替换现有人工报表流程，通过数智化能力辅助管理层实时掌握业务指标",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0001"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_7579e786",
+    "atom_type": "Fact",
+    "summary": "Alpha智能报表平台预计接入12个数据源，支持日报、周报、月报三种报表模式",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0002"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_9b4b3d98",
+    "atom_type": "Fact",
+    "summary": "所提及对象的核心功能包括数据接入层、报表生成引擎、权限管理模块、消息推送服务",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0003"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_72a926cf",
+    "atom_type": "Fact",
+    "summary": "系统支持MySQL、PostgreSQL、ClickHouse、Kafka四类数据源接入",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0004"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_c8aa3517",
+    "atom_type": "Fact",
+    "summary": "系统接口采用统一适配器模式，新增数据源仅需实现DataSourceAdapter接口",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0005"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_28cf81f2",
+    "atom_type": "Fact",
+    "summary": "联调阶段需要具备测试环境账号和网络权限",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0006"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_9985616c",
+    "atom_type": "Fact",
+    "summary": "2026-04-22更新的权限校验章节规定所有报表访问须经RBAC校验，角色分admin、editor、viewer三级",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0007"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_c374da9f",
+    "atom_type": "ActionItem",
+    "summary": "完成/api/v1/auth/check权限校验接口开发",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0008"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": "2026-04-25",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_cb89b62d",
+    "atom_type": "ActionItem",
+    "summary": "运维开通测试环境权限账号",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0009"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "运维"
+    ],
+    "deadline": "2026-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_0814da07",
+    "atom_type": "Risk",
+    "summary": "测试环境权限账号未按时开通将阻塞接口联调进度",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0010"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": "high",
+    "risk_reason": "测试环境权限账号未在2026-04-24前完成开通"
+  },
+  {
+    "atom_id": "atom_450c78b1",
+    "atom_type": "Fact",
+    "summary": "报表采用模板驱动方式生成，支持图表、表格、文本混排",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0011"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_c4c187fd",
+    "atom_type": "Fact",
+    "summary": "报表渲染引擎选型确定为ECharts 5.x版本",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0012"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_e84cade9",
+    "atom_type": "Fact",
+    "summary": "支持的推送渠道包含飞书、邮件、短信三种",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0013"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_b8471102",
+    "atom_type": "Fact",
+    "summary": "推送策略支持定时触发、阈值触发两种模式",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0014"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_0eb86ee9",
+    "atom_type": "Fact",
+    "summary": "核心接口列表可查阅附录获取",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0015"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_d8856b7b",
+    "atom_type": "Decision",
+    "summary": "2026-04-21周会确认接口字段report_version暂不下线，保留至2026-06-01，旧版客户端迁移完成后废弃",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0016"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_f1abb1c6",
+    "atom_type": "Fact",
+    "summary": "P0联调阶段的时间范围为2026-04-20至2026-04-28",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0017"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_172d4c29",
+    "atom_type": "Fact",
+    "summary": "P1测试阶段的时间范围为2026-04-29至2026-05-09",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0018"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_a35fd232",
+    "atom_type": "Fact",
+    "summary": "P2灰度上线的时间为2026-05-12",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0019"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_bef86bb5",
+    "atom_type": "Risk",
+    "summary": "2026-04-21确认测试环境权限未开通致接口联调延期2天，预计影响P0里程碑",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0020"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": "high",
+    "risk_reason": "测试环境权限未开通，已导致接口联调延期2天，预计影响P0里程碑"
+  },
+  {
+    "atom_id": "atom_61cc9e18",
+    "atom_type": "Risk",
+    "summary": "接口字段确认时间不确定，旧版客户端迁移计划仍在评估中",
+    "source_id": "doc_alpha_prd",
+    "evidence_ids": [
+      "ev_doc_alpha_prd_0021"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": "medium",
+    "risk_reason": "接口字段确认时间不确定，旧版客户端迁移计划仍在评估中，存在进度延误风险"
+  },
+  {
+    "atom_id": "atom_206e54ce",
+    "atom_type": "Fact",
+    "summary": "Alpha项目P0接口联调整体已延期2天，原因为测试环境权限未开通无法连接数据源",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0001"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_7c5dd143",
+    "atom_type": "ActionItem",
+    "summary": "运维加急处理Alpha项目测试环境权限开通申请",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0002"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_ops"
+    ],
+    "deadline": "2026-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_76fa8ee1",
+    "atom_type": "Decision",
+    "summary": "Alpha项目P0联调deadline顺延至2026-04-28，研发需在权限开通后3个工作日内完成联调",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0003"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_rd"
+    ],
+    "deadline": "2026-04-28",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_ebd20423",
+    "atom_type": "ActionItem",
+    "summary": "QA需在2026-04-24下午测试环境权限开通后第一时间验证环境可用性",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0004"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_qa"
+    ],
+    "deadline": "2026-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_cc825a7f",
+    "atom_type": "Decision",
+    "summary": "接口字段report_version暂不下线，保留至旧版客户端迁移完成",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0005"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_rd",
+      "user_pm"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_c20208d5",
+    "atom_type": "Decision",
+    "summary": "决议接口字段report_version暂不下线，保留至旧版客户端迁移完成后再废弃",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0006"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_lead"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_81fb11db",
+    "atom_type": "Decision",
+    "summary": "决议P0联调deadline顺延至2026-04-28，原因是测试环境权限延迟开通",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0007"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_lead"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_43add105",
+    "atom_type": "Question",
+    "summary": "PM询问QA接口压测报告的可提供时间",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0008"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_pm",
+      "user_qa"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_6c3e5c84",
+    "atom_type": "Fact",
+    "summary": "QA说明压测依赖联调完成，联调结束后2个工作日内可出具压测报告",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0009"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_qa"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_97dc4845",
+    "atom_type": "ActionItem",
+    "summary": "运维user_ops需在2026-04-24完成测试环境权限开通",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0010"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_ops"
+    ],
+    "deadline": "2026-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_c76cf51e",
+    "atom_type": "ActionItem",
+    "summary": "QA user_qa需在测试环境权限开通当日确认环境可用，截止2026-04-24",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0011"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_qa"
+    ],
+    "deadline": "2026-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_df73c5a0",
+    "atom_type": "ActionItem",
+    "summary": "研发user_rd需在2026-04-28日前完成接口联调",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0012"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_rd"
+    ],
+    "deadline": "2026-04-28",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_1e6799a3",
+    "atom_type": "ActionItem",
+    "summary": "QA user_qa需在2026-04-30日前提交接口压测报告",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0013"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_qa"
+    ],
+    "deadline": "2026-04-30",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_b51f1433",
+    "atom_type": "ActionItem",
+    "summary": "PM user_pm需更新里程碑文档，记录deadline延期信息",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0014"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_pm"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_3726f4bc",
+    "atom_type": "ActionItem",
+    "summary": "提交接口压测报告",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0015"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_qa"
+    ],
+    "deadline": "2026-04-30",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_0130b526",
+    "atom_type": "ActionItem",
+    "summary": "更新里程碑文档，记录deadline延期",
+    "source_id": "minutes_alpha_review",
+    "evidence_ids": [
+      "ev_minutes_alpha_review_0016"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "user_pm"
+    ],
+    "deadline": "2026-04-22",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_adb6f1a8",
+    "atom_type": "Fact",
+    "summary": "当前测试环境无法连接，需完成权限申请开通后才可使用",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0001"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_ac8ffa46",
+    "atom_type": "Question",
+    "summary": "研发询问测试环境权限申请的当前进度",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0002"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_095fdd93",
+    "atom_type": "Fact",
+    "summary": "测试环境权限申请处于审批流程中，预计本周内可完成",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0003"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_c07f986d",
+    "atom_type": "ActionItem",
+    "summary": "研发在测试环境权限开通前优先完成不依赖测试环境的联调部分",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0004"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "研发"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_596c484a",
+    "atom_type": "Fact",
+    "summary": "QA压测方案已准备完毕，待测试环境权限开通后可启动压测",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0005"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_5f7229e5",
+    "atom_type": "ActionItem",
+    "summary": "运维需于2024-04-24完成测试环境权限开通",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0006"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "运维"
+    ],
+    "deadline": "2024-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_b4c54253",
+    "atom_type": "ActionItem",
+    "summary": "QA需于2024-04-24完成测试环境验证",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0007"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "QA"
+    ],
+    "deadline": "2024-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_bb56d9e2",
+    "atom_type": "ActionItem",
+    "summary": "研发需于2024-04-28完成全部联调工作",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0008"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "研发"
+    ],
+    "deadline": "2024-04-28",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_a3d910cf",
+    "atom_type": "ActionItem",
+    "summary": "QA需于2024-04-30输出压测报告",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0009"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "QA"
+    ],
+    "deadline": "2024-04-30",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_0f7dd010",
+    "atom_type": "ActionItem",
+    "summary": "PM需于2024-04-24更新项目里程碑",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0010"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "PM"
+    ],
+    "deadline": "2024-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_6b0bddc7",
+    "atom_type": "ActionItem",
+    "summary": "测试环境权限开通后需同步更新接口文档内的测试地址",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0011"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "研发",
+      "QA"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_4ceb43c9",
+    "atom_type": "Question",
+    "summary": "QA询问PM是否已将接口字段report_version暂不下线的决定录入PRD",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0012"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_1a9eb352",
+    "atom_type": "Decision",
+    "summary": "已决定接口字段report_version暂不下线，相关内容已更新到PRD 3.0节",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0013"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "PM"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_a2faea90",
+    "atom_type": "Fact",
+    "summary": "研发本地mock联调已跑通，待权限开通可切换真实环境，联调ETA仍为2024-04-28",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0014"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_8e63bef3",
+    "atom_type": "Fact",
+    "summary": "测试环境权限申请已通过审批，运维预计2024-04-24下午3点前完成开通并群内通知",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0015"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_1e063ec5",
+    "atom_type": "ActionItem",
+    "summary": "运维完成测试环境权限开通后需在群内发布通知告知相关人员",
+    "source_id": "msg_alpha_group",
+    "evidence_ids": [
+      "ev_msg_alpha_group_0016"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "运维"
+    ],
+    "deadline": "2024-04-24",
+    "risk_level": null,
+    "risk_reason": null
+  }
+]

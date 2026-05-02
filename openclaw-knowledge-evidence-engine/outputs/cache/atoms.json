@@ -1,0 +1,344 @@
+[
+  {
+    "atom_id": "atom_29e703e0",
+    "atom_type": "Fact",
+    "summary": "OpenClaw智能会议助手v1.0旨在替代人工整理会议纪要，通过AI能力帮助团队减少信息遗漏。",
+    "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+    "evidence_ids": [
+      "ev_doc_HY9qdEto7o57R6xinZiczDMdntb_0001"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_fd77f164",
+    "atom_type": "Fact",
+    "summary": "OpenClaw v1.0核心功能包含会前背景卡片、会后任务预览、周报洞察、风险预警四类。",
+    "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+    "evidence_ids": [
+      "ev_doc_HY9qdEto7o57R6xinZiczDMdntb_0002"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_10fac0be",
+    "atom_type": "Fact",
+    "summary": "OpenClaw v1.0里程碑：P0联调2026-04-20至30，P1测试2026-05-01至15，P2灰度上线2026-05-20。",
+    "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+    "evidence_ids": [
+      "ev_doc_HY9qdEto7o57R6xinZiczDMdntb_0003"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_f5ce2ab8",
+    "atom_type": "Risk",
+    "summary": "飞书API权限审批流程较长，已导致OpenClaw联调阶段延期3天。",
+    "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+    "evidence_ids": [
+      "ev_doc_HY9qdEto7o57R6xinZiczDMdntb_0004"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": "high",
+    "risk_reason": "飞书API权限审批流程长，已造成联调进度延期3天，可能影响后续里程碑推进。"
+  },
+  {
+    "atom_id": "atom_a91e0bed",
+    "atom_type": "Risk",
+    "summary": "OpenClaw向量索引构建依赖GPU资源，测试环境暂用CPU替代，性能待验证。",
+    "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+    "evidence_ids": [
+      "ev_doc_HY9qdEto7o57R6xinZiczDMdntb_0005"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": "medium",
+    "risk_reason": "向量索引构建依赖GPU，测试环境用CPU替代，性能未经验证，可能影响功能使用效果。"
+  },
+  {
+    "atom_id": "atom_008214c5",
+    "atom_type": "Fact",
+    "summary": "OpenClaw项目A端混合检索（BM25 + 语义向量 + RRF）已完成，本地测试通过",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0001"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_75ad94c5",
+    "atom_type": "Fact",
+    "summary": "OpenClaw项目A端飞书真实数据接入正在进行，权限问题将于2026-04-29解决",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0002"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_065dada5",
+    "atom_type": "Fact",
+    "summary": "OpenClaw项目A端向量索引已支持磁盘缓存，服务重启无需重新构建",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0003"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_f3a4257a",
+    "atom_type": "Fact",
+    "summary": "OpenClaw项目B端四个触发场景（会前/会后/周报/风险）均已与A端联调通过",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0004"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_551d5e00",
+    "atom_type": "Fact",
+    "summary": "OpenClaw项目B端Mock模式切换Real模式的验证工作正在进行中",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0005"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_5d4da95a",
+    "atom_type": "Decision",
+    "summary": "OpenClaw项目决定A端数据源接入优先覆盖文档和群消息，日历和任务作为补充",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0006"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_9d7a1690",
+    "atom_type": "Decision",
+    "summary": "OpenClaw项目决定下周完成端到端演示，需准备汇报材料",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0007"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_09887de0",
+    "atom_type": "ActionItem",
+    "summary": "孙鸣皓完成飞书真实数据接入",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0008"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "孙鸣皓"
+    ],
+    "deadline": "2026-04-30",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_6edd2cc5",
+    "atom_type": "ActionItem",
+    "summary": "朱嘉骏更新B端触发逻辑适配真实数据格式",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0009"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "朱嘉骏"
+    ],
+    "deadline": "2026-05-01",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_1571f386",
+    "atom_type": "ActionItem",
+    "summary": "孙鸣皓准备演示PPT",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0010"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "孙鸣皓"
+    ],
+    "deadline": "2026-05-05",
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_8482901d",
+    "atom_type": "Risk",
+    "summary": "OpenClaw项目飞书权限审批延迟为高风险，已通过测试企业绕过，2026-04-29解决，负责人孙鸣皓",
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "evidence_ids": [
+      "ev_doc_S3kLdVsX5oJzFPxscf5cVbsknne_0001"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "孙鸣皓"
+    ],
+    "deadline": "2026-04-29",
+    "risk_level": "high",
+    "risk_reason": "飞书API权限需要企业管理员审批，导致真实数据接入延期，P0联调延期约3天"
+  },
+  {
+    "atom_id": "atom_7d8db801",
+    "atom_type": "Risk",
+    "summary": "OpenClaw项目向量模型性能为中风险，已加磁盘缓存解决二次启动重建问题，负责人孙鸣皓",
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "evidence_ids": [
+      "ev_doc_S3kLdVsX5oJzFPxscf5cVbsknne_0002"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "孙鸣皓"
+    ],
+    "deadline": null,
+    "risk_level": "medium",
+    "risk_reason": "本地sentence-transformers模型在CPU上推理较慢，build耗时约2分钟，导致首次启动体验差"
+  },
+  {
+    "atom_id": "atom_d7da068d",
+    "atom_type": "Risk",
+    "summary": "OpenClaw项目B端回调公网访问为中风险，待处理，负责人朱嘉骏",
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "evidence_ids": [
+      "ev_doc_S3kLdVsX5oJzFPxscf5cVbsknne_0003"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "朱嘉骏"
+    ],
+    "deadline": null,
+    "risk_level": "medium",
+    "risk_reason": "飞书消息回调需要公网URL，本地开发无法接收，机器人主动推送功能无法本地测试"
+  },
+  {
+    "atom_id": "atom_5d8680f5",
+    "atom_type": "ActionItem",
+    "summary": "朱嘉骏需通过ngrok或部署公网的方式解决B端回调公网访问问题",
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "evidence_ids": [
+      "ev_doc_S3kLdVsX5oJzFPxscf5cVbsknne_0004"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "朱嘉骏"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_d0dcc421",
+    "atom_type": "Fact",
+    "summary": "已添加磁盘缓存解决体验差问题，二次启动无需重建，负责人为孙鸣皓",
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "evidence_ids": [
+      "ev_doc_S3kLdVsX5oJzFPxscf5cVbsknne_0005"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "孙鸣皓"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_2f5c8c39",
+    "atom_type": "Risk",
+    "summary": "B端回调公网访问为中风险，本地无法接收飞书回调，影响机器人主动推送功能本地测试",
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "evidence_ids": [
+      "ev_doc_S3kLdVsX5oJzFPxscf5cVbsknne_0006"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "朱嘉骏"
+    ],
+    "deadline": null,
+    "risk_level": "medium",
+    "risk_reason": "飞书消息回调需要公网URL，本地开发无法接收，导致机器人主动推送功能无法在本地测试"
+  },
+  {
+    "atom_id": "atom_d7c5a868",
+    "atom_type": "ActionItem",
+    "summary": "需使用ngrok或将服务部署到公网解决B端回调公网访问问题，负责人为朱嘉骏",
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "evidence_ids": [
+      "ev_doc_S3kLdVsX5oJzFPxscf5cVbsknne_0007"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [
+      "朱嘉骏"
+    ],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  },
+  {
+    "atom_id": "atom_aef1150f",
+    "atom_type": "Fact",
+    "summary": "存在标注日期为2026-04-29的OpenClaw项目周会纪要",
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "evidence_ids": [
+      "ev_doc_VGqkdzLFEovvDYxyG2qc014Inyf_0001"
+    ],
+    "confidence": 1.0,
+    "owner_candidates": [],
+    "deadline": null,
+    "risk_level": null,
+    "risk_reason": null
+  }
+]

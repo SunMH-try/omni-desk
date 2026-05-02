@@ -1,0 +1,80 @@
+[
+  {
+    "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+    "doc_description": "本文件是OpenClaw智能会议助手v1.0产品需求文档，核心介绍该版本的功能、研发里程碑及相关风险。",
+    "nodes": [
+      {
+        "node_id": "node_4b711a83",
+        "source_id": "doc_HY9qdEto7o57R6xinZiczDMdntb",
+        "title": "正文",
+        "summary": "OpenClaw智能会议助手v1.0 PRD介绍其功能、里程碑及相关风险。",
+        "chunk": "OpenClaw 智能会议助手 PRD v1.0 1. 项目背景 OpenClaw 旨在替代人工整理会议纪要的流程，通过 AI 自动提取 Action Items、生成周报洞察、识别项目风险，帮助团队减少信息遗漏。 2. 核心功能 会前背景卡片：自动汇总上次会议决策和未完成任务 会后任务预览：从会议纪要中抽取 Action Items 并推送确认 周报洞察：每周自动生成项目进展摘要 风险预警：识别延期任务和高风险事项 3. 里程碑 P0 联调阶段：2026-04-20 至 2026-04-30 P1 测试阶段：2026-05-01 至 2026-05-15 P2 灰度上线：2026-05-20 4. 风险与依赖 风险1：飞书 API 权限审批流程较长，已导致联调延期 3 天。 风险2：向量索引构建依赖 GPU 资源，测试环境暂时用 CPU 替代，性能待验证。",
+        "depth": 2
+      }
+    ]
+  },
+  {
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "doc_description": "本文件是2026年4月29日OpenClaw项目周会纪要，主要通报项目进展，明确会议决策及人员分工安排。",
+    "nodes": [
+      {
+        "node_id": "node_e4a241ea",
+        "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+        "title": "正文",
+        "summary": "2026年4月29日OpenClaw项目周会通报进展，明确决策与分工。",
+        "chunk": "OpenClaw 项目周会纪要 2026-04-29 参会人 孙鸣皓、朱嘉骏 议题 1. A端进展 混合检索（BM25 + 语义向量 + RRF）已完成，本地测试通过 飞书真实数据接入正在进行中，权限问题今日解决 向量索引已支持磁盘缓存，重启无需重新构建 2. B端进展 四个触发场景（会前/会后/周报/风险）均已与A端联调通过 Mock 模式切换 Real 模式验证中 3. 决策 决定：A端数据源接入优先覆盖文档和群消息，日历和任务作为补充 决定：下周完成端到端演示，准备汇报材料 Action Items 孙鸣皓：完成飞书真实数据接入，截止 2026-04-30 朱嘉骏：更新 B 端触发逻辑适配真实数据格式，截止 2026-05-01 孙鸣皓：准备演示 PPT，截止 2026-05-05",
+        "depth": 2
+      }
+    ]
+  },
+  {
+    "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+    "doc_description": "本文档为OpenClaw项目风险跟踪文件，该项目共梳理出3项风险，目前2项已解决、1项待处理。",
+    "nodes": [
+      {
+        "node_id": "node_0dbf02c9",
+        "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+        "title": "正文 [1/2]",
+        "summary": "OpenClaw项目风险清单共3项，2项已解决、1项待处理。",
+        "chunk": "OpenClaw 项目风险跟踪 当前风险清单 风险1：飞书权限审批延迟（高风险） 描述：飞书 API 权限需要企业管理员审批，导致真实数据接入延期 影响：P0 联调延期约 3 天 状态：已通过测试企业绕过，2026-04-29 解决 负责人：孙鸣皓 风险2：向量模型性能（中风险） 描述：本地 sentence-transformers 模型在 CPU 上推理较慢，build 耗时约 2 分钟 影响：首次启动体验差 状态：已加磁盘缓存，二次启动无需重建 负责人：孙鸣皓 风险3：B端回调公网访问（中风险） 描述：飞书消息回调需要公网 URL，本地开发无法接收 影响：机器人主动推送功能无法在本地测试 状态：待处理，需 ngrok 或部署到公网 负责人：朱嘉骏 当前风险清单 风险1：飞书权限审批延迟（高风险） 描述：飞书 API 权限需要企业管理员审批，导致真实数据接入延期 影响：P0 联调延期约 3 天 状态：已通过测试企业绕过，2026-04-29 解决 负责人：孙鸣皓 风险2：向量模型性能（中风险） 描述：本地 sentence-transformers 模型在 CPU 上推理较慢，build 耗时约 2 分钟 影响：首次启动体验差 状态：已加磁盘缓存，二次启动无需重建 负责人：孙鸣皓 风险3：B端回调公网访问（中风险） 描述：飞书消息回调需要公网 URL，本地开发无法接收 影响：机",
+        "depth": 2
+      },
+      {
+        "node_id": "node_55f9de2d",
+        "source_id": "doc_S3kLdVsX5oJzFPxscf5cVbsknne",
+        "title": "正文 [2/2]",
+        "summary": "两项开发问题状态明确，含中风险待处理，孙鸣皓朱嘉骏分责。",
+        "chunk": "体验差 状态：已加磁盘缓存，二次启动无需重建 负责人：孙鸣皓 风险3：B端回调公网访问（中风险） 描述：飞书消息回调需要公网 URL，本地开发无法接收 影响：机器人主动推送功能无法在本地测试 状态：待处理，需 ngrok 或部署到公网 负责人：朱嘉骏",
+        "depth": 2
+      }
+    ]
+  },
+  {
+    "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+    "doc_description": "本文件为2026年4月29日的OpenClaw项目周会纪要，记录了该项目本次周会的相关会议内容。",
+    "nodes": [
+      {
+        "node_id": "node_427db33c",
+        "source_id": "doc_VGqkdzLFEovvDYxyG2qc014Inyf",
+        "title": "OpenClaw 项目周会纪要 2026-04-29 [1]",
+        "summary": "此为2026年4月29日OpenClaw项目的周会纪要。",
+        "chunk": "OpenClaw 项目周会纪要 2026-04-29",
+        "depth": 1
+      }
+    ]
+  },
+  {
+    "source_id": "msg_oc_ba4503553a2a446df1f5a4bf587f7620",
+    "doc_description": "该文档核心内容为用户ou_39bccc…在相关交互场景中艾特了用户_user_1。",
+    "nodes": [
+      {
+        "node_id": "node_1c15d665",
+        "source_id": "msg_oc_ba4503553a2a446df1f5a4bf587f7620",
+        "title": "msg_oc_ba4503553a2a446df1f5a4bf587f7620 [1]",
+        "summary": "用户ou_39bccc...艾特了用户_user_1。",
+        "chunk": "ou_39bccc93c8bc5cce48e63d5d885d1689: @_user_1",
+        "depth": 1
+      }
+    ]
+  }
+]

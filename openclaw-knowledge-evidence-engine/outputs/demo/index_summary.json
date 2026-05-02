@@ -1,0 +1,9 @@
+{
+  "tenant_id": "omni_desk_test",
+  "project_id": "openclaw_project",
+  "source_count": 5,
+  "index_count": 5,
+  "atom_count": 23,
+  "graph_node_count": 29,
+  "graph_edge_count": 33
+}

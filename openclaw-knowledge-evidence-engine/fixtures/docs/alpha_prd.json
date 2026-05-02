@@ -1,0 +1,71 @@
+{
+  "source_id": "doc_alpha_prd",
+  "source_type": "docs",
+  "title": "Alpha 智能报表平台 PRD v2.3",
+  "url": "https://example.feishu.cn/docx/alpha_prd_001",
+  "tenant_id": "demo_tenant",
+  "project_id": "alpha_report_platform",
+  "permission_scope": ["project_alpha_group", "team_product", "team_rd"],
+  "updated_at": "2026-04-22T14:30:00+08:00",
+  "sections": [
+    {
+      "heading": "1. 项目背景",
+      "level": 1,
+      "content": "Alpha 智能报表平台旨在替换现有人工报表流程，通过数据自动聚合与智能分析，帮助管理层实时掌握业务指标。预计接入 12 个数据源，支持日报、周报、月报三种模式。"
+    },
+    {
+      "heading": "2. 功能需求",
+      "level": 1,
+      "content": "核心功能包括：数据接入层、报表生成引擎、权限管理模块、消息推送服务。"
+    },
+    {
+      "heading": "2.1 数据接入层",
+      "level": 2,
+      "content": "支持 MySQL、PostgreSQL、ClickHouse、Kafka 数据源接入。接口采用统一适配器模式，新数据源只需实现 DataSourceAdapter 接口。联调阶段需要测试环境账号和网络权限。"
+    },
+    {
+      "heading": "2.2 权限管理模块",
+      "level": 2,
+      "content": "新增权限校验章节（2026-04-22 更新）：所有报表访问须经过 RBAC 权限校验。角色分为 admin、editor、viewer 三级。权限校验接口 /api/v1/auth/check 须在 2026-04-25 前完成。测试环境权限账号须由运维在 2026-04-24 前开通，否则将阻塞接口联调进度。"
+    },
+    {
+      "heading": "2.3 报表生成引擎",
+      "level": 2,
+      "content": "采用模板驱动方式生成报表，支持图表、表格、文本混排。渲染引擎选型为 ECharts 5.x。"
+    },
+    {
+      "heading": "2.4 消息推送服务",
+      "level": 2,
+      "content": "支持飞书、邮件、短信三种推送渠道。推送策略支持定时、阈值触发两种模式。"
+    },
+    {
+      "heading": "3. 接口设计",
+      "level": 1,
+      "content": "核心接口列表见附录。注意：接口字段 report_version 暂不下线，保留至 2026-06-01，待旧版客户端迁移完成后再废弃。此决定于 2026-04-21 周会确认。"
+    },
+    {
+      "heading": "4. 里程碑",
+      "level": 1,
+      "content": "P0 联调阶段：2026-04-20 至 2026-04-28。P1 测试阶段：2026-04-29 至 2026-05-09。P2 灰度上线：2026-05-12。"
+    },
+    {
+      "heading": "5. 风险与依赖",
+      "level": 1,
+      "content": "风险1：测试环境权限未开通，已导致接口联调延期 2 天（2026-04-21 确认）。预计影响 P0 里程碑。风险2：接口字段确认时间不确定，旧版客户端迁移计划仍在评估中。"
+    }
+  ],
+  "comments": [
+    {
+      "comment_id": "cmt_001",
+      "author": "user_qa",
+      "content": "测试环境的权限账号什么时候能开？联调一直卡着。",
+      "timestamp": "2026-04-21T10:15:00+08:00"
+    },
+    {
+      "comment_id": "cmt_002",
+      "author": "user_ops",
+      "content": "已提申请，预计 2026-04-24 下午完成。",
+      "timestamp": "2026-04-21T11:02:00+08:00"
+    }
+  ]
+}

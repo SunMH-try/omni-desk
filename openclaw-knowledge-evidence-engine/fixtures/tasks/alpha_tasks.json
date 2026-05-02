@@ -1,0 +1,94 @@
+{
+  "source_id": "tasks_alpha",
+  "source_type": "tasks",
+  "title": "Alpha 项目任务列表",
+  "url": "https://example.feishu.cn/task/alpha_project",
+  "tenant_id": "demo_tenant",
+  "project_id": "alpha_report_platform",
+  "permission_scope": ["project_alpha_group"],
+  "updated_at": "2026-04-23T18:00:00+08:00",
+  "tasks": [
+    {
+      "task_id": "task_001",
+      "title": "完成测试环境权限开通",
+      "assignee": "user_ops",
+      "status": "in_progress",
+      "priority": "high",
+      "deadline": "2026-04-24",
+      "created_at": "2026-04-21T15:00:00+08:00",
+      "updated_at": "2026-04-23T15:30:00+08:00",
+      "comments": [
+        {"author": "user_ops", "text": "审批已通过，预计 4/24 下午完成", "timestamp": "2026-04-23T15:30:00+08:00"}
+      ],
+      "source_minutes_id": "minutes_alpha_review"
+    },
+    {
+      "task_id": "task_002",
+      "title": "权限开通后验证测试环境可用",
+      "assignee": "user_qa",
+      "status": "pending",
+      "priority": "high",
+      "deadline": "2026-04-24",
+      "created_at": "2026-04-21T15:00:00+08:00",
+      "updated_at": "2026-04-21T15:00:00+08:00",
+      "comments": [],
+      "source_minutes_id": "minutes_alpha_review"
+    },
+    {
+      "task_id": "task_003",
+      "title": "完成数据接入层接口联调",
+      "assignee": "user_rd",
+      "status": "in_progress",
+      "priority": "high",
+      "deadline": "2026-04-28",
+      "created_at": "2026-04-14T09:00:00+08:00",
+      "updated_at": "2026-04-22T11:00:00+08:00",
+      "comments": [
+        {"author": "user_rd", "text": "本地 mock 已跑通，等环境权限后切真实环境", "timestamp": "2026-04-22T11:00:00+08:00"},
+        {"author": "user_rd", "text": "原计划 4/22 完成，因测试环境权限问题延期至 4/28", "timestamp": "2026-04-21T14:30:00+08:00"}
+      ],
+      "source_minutes_id": "minutes_alpha_review",
+      "original_deadline": "2026-04-22",
+      "delay_reason": "测试环境权限未开通，阻塞联调进度"
+    },
+    {
+      "task_id": "task_004",
+      "title": "提交接口压测报告",
+      "assignee": "user_qa",
+      "status": "pending",
+      "priority": "medium",
+      "deadline": "2026-04-30",
+      "created_at": "2026-04-21T15:00:00+08:00",
+      "updated_at": "2026-04-21T15:00:00+08:00",
+      "comments": [],
+      "source_minutes_id": "minutes_alpha_review",
+      "depends_on": ["task_003"]
+    },
+    {
+      "task_id": "task_005",
+      "title": "更新里程碑文档记录延期",
+      "assignee": "user_pm",
+      "status": "completed",
+      "priority": "medium",
+      "deadline": "2026-04-22",
+      "created_at": "2026-04-21T15:00:00+08:00",
+      "updated_at": "2026-04-22T09:30:00+08:00",
+      "comments": [
+        {"author": "user_pm", "text": "已更新，PRD 里程碑章节已反映新 deadline", "timestamp": "2026-04-22T09:30:00+08:00"}
+      ],
+      "source_minutes_id": "minutes_alpha_review"
+    },
+    {
+      "task_id": "task_006",
+      "title": "权限开通后更新接口文档测试地址",
+      "assignee": "user_rd",
+      "status": "pending",
+      "priority": "low",
+      "deadline": "2026-04-25",
+      "created_at": "2026-04-21T16:06:00+08:00",
+      "updated_at": "2026-04-21T16:06:00+08:00",
+      "comments": [],
+      "source_message_id": "msg_006"
+    }
+  ]
+}

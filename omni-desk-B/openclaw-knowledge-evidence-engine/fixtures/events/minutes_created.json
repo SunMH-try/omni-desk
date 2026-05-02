@@ -1,0 +1,13 @@
+{
+  "event_type": "minutes_created",
+  "event_id": "evt_001",
+  "tenant_id": "demo_tenant",
+  "project_id": "alpha_report_platform",
+  "payload": {
+    "minutes_id": "minutes_alpha_review",
+    "meeting_id": "meeting_alpha_weekly",
+    "created_at": "2026-04-21T18:00:00+08:00",
+    "created_by": "user_pm"
+  },
+  "timestamp": "2026-04-21T18:00:00+08:00"
+}

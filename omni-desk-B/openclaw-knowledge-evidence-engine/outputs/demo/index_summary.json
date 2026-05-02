@@ -1,0 +1,9 @@
+{
+  "tenant_id": "demo_tenant",
+  "project_id": "alpha_report_platform",
+  "source_count": 5,
+  "index_count": 3,
+  "atom_count": 53,
+  "graph_node_count": 73,
+  "graph_edge_count": 92
+}

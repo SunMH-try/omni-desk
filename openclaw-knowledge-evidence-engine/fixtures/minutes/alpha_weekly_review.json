@@ -1,0 +1,108 @@
+{
+  "source_id": "minutes_alpha_review",
+  "source_type": "minutes",
+  "title": "Alpha 项目周会纪要 2026-04-21",
+  "url": "https://example.feishu.cn/minutes/alpha_weekly_2026_04_21",
+  "tenant_id": "demo_tenant",
+  "project_id": "alpha_report_platform",
+  "permission_scope": ["project_alpha_group"],
+  "updated_at": "2026-04-21T18:00:00+08:00",
+  "meeting_id": "meeting_alpha_weekly",
+  "start_time": "2026-04-21T14:00:00+08:00",
+  "end_time": "2026-04-21T15:30:00+08:00",
+  "attendees": ["user_pm", "user_rd", "user_qa", "user_ops", "user_lead"],
+  "agenda": [
+    "P0 联调进度同步",
+    "测试环境权限问题处理",
+    "接口字段废弃时间确认",
+    "下周计划"
+  ],
+  "transcript": [
+    {
+      "speaker": "user_pm",
+      "timestamp": "2026-04-21T14:02:00+08:00",
+      "text": "本周 P0 联调进度，研发这边同步一下状态。"
+    },
+    {
+      "speaker": "user_rd",
+      "timestamp": "2026-04-21T14:03:00+08:00",
+      "text": "接口联调整体延期了 2 天。主要原因是测试环境权限没开通，我们连不上数据源。权限问题已经在文档里提过了，运维说 4 月 24 日下午才能搞定。"
+    },
+    {
+      "speaker": "user_qa",
+      "timestamp": "2026-04-21T14:05:00+08:00",
+      "text": "这个问题上周就说了，一直没解决。压测报告那边也在等，能不能加急？"
+    },
+    {
+      "speaker": "user_ops",
+      "timestamp": "2026-04-21T14:07:00+08:00",
+      "text": "权限申请流程要走审批，我这边已经在加急了，最早 4 月 24 日下午。"
+    },
+    {
+      "speaker": "user_lead",
+      "timestamp": "2026-04-21T14:10:00+08:00",
+      "text": "好，那联调 deadline 顺延到 4 月 28 日，研发需要在权限开通后的 3 个工作日内完成联调。研发你这边确认一下 deadline。"
+    },
+    {
+      "speaker": "user_rd",
+      "timestamp": "2026-04-21T14:11:00+08:00",
+      "text": "确认，4 月 28 日之前完成。同时需要 QA 在权限开通当天配合确认环境可用。"
+    },
+    {
+      "speaker": "user_qa",
+      "timestamp": "2026-04-21T14:12:00+08:00",
+      "text": "没问题，4 月 24 日下午运维开通后我第一时间验证。"
+    },
+    {
+      "speaker": "user_pm",
+      "timestamp": "2026-04-21T14:15:00+08:00",
+      "text": "接口字段 report_version 废弃的事，旧版客户端迁移计划还没定。"
+    },
+    {
+      "speaker": "user_rd",
+      "timestamp": "2026-04-21T14:17:00+08:00",
+      "text": "建议先保留这个字段，等客户端迁移完再废弃，否则会有兼容性问题。"
+    },
+    {
+      "speaker": "user_lead",
+      "timestamp": "2026-04-21T14:18:00+08:00",
+      "text": "同意，接口字段 report_version 暂不下线，保留至旧版客户端迁移完成。这个决定记录下来。"
+    },
+    {
+      "speaker": "user_pm",
+      "timestamp": "2026-04-21T14:20:00+08:00",
+      "text": "还有压测报告，QA 什么时候能提供？"
+    },
+    {
+      "speaker": "user_qa",
+      "timestamp": "2026-04-21T14:21:00+08:00",
+      "text": "压测依赖联调完成，联调好了之后 2 个工作日内出报告，大概 4 月 30 日。"
+    },
+    {
+      "speaker": "user_lead",
+      "timestamp": "2026-04-21T14:25:00+08:00",
+      "text": "好，总结一下今天的 Action Items：一，运维 4 月 24 日下午完成测试环境权限开通；二，QA 在权限开通后当天确认环境可用；三，研发 4 月 28 日前完成接口联调；四，QA 4 月 30 日前提交接口压测报告；五，PM 更新里程碑文档，把 deadline 延后记录进去。"
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "dec_001",
+      "content": "接口字段 report_version 暂不下线，保留至旧版客户端迁移完成后再废弃。",
+      "confirmed_by": "user_lead",
+      "timestamp": "2026-04-21T14:18:00+08:00"
+    },
+    {
+      "decision_id": "dec_002",
+      "content": "P0 联调 deadline 顺延至 2026-04-28，原因是测试环境权限延迟开通。",
+      "confirmed_by": "user_lead",
+      "timestamp": "2026-04-21T14:10:00+08:00"
+    }
+  ],
+  "action_items_raw": [
+    {"assignee": "user_ops", "content": "完成测试环境权限开通", "deadline": "2026-04-24"},
+    {"assignee": "user_qa", "content": "权限开通后当天确认测试环境可用", "deadline": "2026-04-24"},
+    {"assignee": "user_rd", "content": "完成接口联调", "deadline": "2026-04-28"},
+    {"assignee": "user_qa", "content": "提交接口压测报告", "deadline": "2026-04-30"},
+    {"assignee": "user_pm", "content": "更新里程碑文档，记录 deadline 延期", "deadline": "2026-04-22"}
+  ]
+}

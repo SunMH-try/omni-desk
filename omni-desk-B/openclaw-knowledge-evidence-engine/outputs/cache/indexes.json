@@ -1,0 +1,124 @@
+[
+  {
+    "source_id": "doc_alpha_prd",
+    "doc_description": "《Alpha智能报表平台PRD v2.3》明确平台功能、迭代内容、各阶段时间节点与项目风险，指导相关开发落地。",
+    "nodes": [
+      {
+        "node_id": "node_1ffa79d7",
+        "source_id": "doc_alpha_prd",
+        "title": "1. 项目背景",
+        "summary": "Alpha智能报表平台替代人工，自动生成多周期报表助力掌握业务指标。",
+        "chunk": "Alpha 智能报表平台旨在替换现有人工报表流程，通过数据自动聚合与智能分析，帮助管理层实时掌握业务指标。预计接入 12 个数据源，支持日报、周报、月报三种模式。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_c8c27a73",
+        "source_id": "doc_alpha_prd",
+        "title": "2. 功能需求",
+        "summary": "核心功能包括数据接入、报表生成、权限管理、消息推送服务。",
+        "chunk": "核心功能包括：数据接入层、报表生成引擎、权限管理模块、消息推送服务。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_9bc4e631",
+        "source_id": "doc_alpha_prd",
+        "title": "2.1 数据接入层",
+        "summary": "支持多数据源接入，新增便捷，联调需测试账号及网络权限。",
+        "chunk": "支持 MySQL、PostgreSQL、ClickHouse、Kafka 数据源接入。接口采用统一适配器模式，新数据源只需实现 DataSourceAdapter 接口。联调阶段需要测试环境账号和网络权限。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_6752c8ce",
+        "source_id": "doc_alpha_prd",
+        "title": "2.2 权限管理模块",
+        "summary": "新增报表RBAC权限校验，相关工作明确各时间节点要求。",
+        "chunk": "新增权限校验章节（2026-04-22 更新）：所有报表访问须经过 RBAC 权限校验。角色分为 admin、editor、viewer 三级。权限校验接口 /api/v1/auth/check 须在 2026-04-25 前完成。测试环境权限账号须由运维在 2026-04-24 前开通，否则将阻塞接口联调进度。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_2b6f4354",
+        "source_id": "doc_alpha_prd",
+        "title": "2.3 报表生成引擎",
+        "summary": "模板驱动生成报表支持混排，渲染引擎选用ECharts 5.x。",
+        "chunk": "采用模板驱动方式生成报表，支持图表、表格、文本混排。渲染引擎选型为 ECharts 5.x。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_f9a290d2",
+        "source_id": "doc_alpha_prd",
+        "title": "2.4 消息推送服务",
+        "summary": "推送支持飞书、邮件、短信三渠道及定时、阈值两种触发模式。",
+        "chunk": "支持飞书、邮件、短信三种推送渠道。推送策略支持定时、阈值触发两种模式。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_c84b0a0d",
+        "source_id": "doc_alpha_prd",
+        "title": "3. 接口设计",
+        "summary": "2026.4.21周会确认接口字段report_version保留至2026.6.1废弃。",
+        "chunk": "核心接口列表见附录。注意：接口字段 report_version 暂不下线，保留至 2026-06-01，待旧版客户端迁移完成后再废弃。此决定于 2026-04-21 周会确认。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_5f5140d0",
+        "source_id": "doc_alpha_prd",
+        "title": "4. 里程碑",
+        "summary": "2026年P0联调、P1测试、P2灰度上线各阶段时间已确定。",
+        "chunk": "P0 联调阶段：2026-04-20 至 2026-04-28。P1 测试阶段：2026-04-29 至 2026-05-09。P2 灰度上线：2026-05-12。",
+        "depth": 2
+      },
+      {
+        "node_id": "node_81ccecfb",
+        "source_id": "doc_alpha_prd",
+        "title": "5. 风险与依赖",
+        "summary": "存在两个项目风险，已致联调延期，或影响P0里程碑。",
+        "chunk": "风险1：测试环境权限未开通，已导致接口联调延期 2 天（2026-04-21 确认）。预计影响 P0 里程碑。风险2：接口字段确认时间不确定，旧版客户端迁移计划仍在评估中。",
+        "depth": 2
+      }
+    ]
+  },
+  {
+    "source_id": "minutes_alpha_review",
+    "doc_description": "2026年4月21日Alpha项目周会确定联调顺延、接口字段暂留安排，明确两项决议及各相关责任人待办事项与截止时间。",
+    "nodes": [
+      {
+        "node_id": "node_5004c398",
+        "source_id": "minutes_alpha_review",
+        "title": "Alpha 项目周会纪要 2026-04-21 [1]",
+        "summary": "Alpha项目周会确定联调顺延及接口字段暂留安排。",
+        "chunk": "Alpha 项目周会纪要 2026-04-21\nP0 联调进度同步\n测试环境权限问题处理\n接口字段废弃时间确认\n下周计划\nuser_pm: 本周 P0 联调进度，研发这边同步一下状态。\nuser_rd: 接口联调整体延期了 2 天。主要原因是测试环境权限没开通，我们连不上数据源。权限问题已经在文档里提过了，运维说 4 月 24 日下午才能搞定。\nuser_qa: 这个问题上周就说了，一直没解决。压测报告那边也在等，能不能加急？\nuser_ops: 权限申请流程要走审批，我这边已经在加急了，最早 4 月 24 日下午。\nuser_lead: 好，那联调 deadline 顺延到 4 月 28 日，研发需要在权限开通后的 3 个工作日内完成联调。研发你这边确认一下 deadline。\nuser_rd: 确认，4 月 28 日之前完成。同时需要 QA 在权限开通当天配合确认环境可用。\nuser_qa: 没问题，4 月 24 日下午运维开通后我第一时间验证。\nuser_pm: 接口字段 report_version 废弃的事，旧版客户端迁移计划还没定。\nuser_rd: 建议先保留这个字段，等客户端迁移完再废弃，否则会有兼容性问题。\nuser_lead: 同意，接口字段 report_version 暂不下线，保留至旧版客户端迁移完成。这个决定记录下来。\nuser_pm: 还有压测报告，Q",
+        "depth": 1
+      },
+      {
+        "node_id": "node_afff5e75",
+        "source_id": "minutes_alpha_review",
+        "title": "Alpha 项目周会纪要 2026-04-21 [2]",
+        "summary": "会议明确两项决议及各责任人待办事项与对应截止时间。",
+        "chunk": "\nuser_lead: 同意，接口字段 report_version 暂不下线，保留至旧版客户端迁移完成。这个决定记录下来。\nuser_pm: 还有压测报告，QA 什么时候能提供？\nuser_qa: 压测依赖联调完成，联调好了之后 2 个工作日内出报告，大概 4 月 30 日。\nuser_lead: 好，总结一下今天的 Action Items：一，运维 4 月 24 日下午完成测试环境权限开通；二，QA 在权限开通后当天确认环境可用；三，研发 4 月 28 日前完成接口联调；四，QA 4 月 30 日前提交接口压测报告；五，PM 更新里程碑文档，把 deadline 延后记录进去。\n决议: 接口字段 report_version 暂不下线，保留至旧版客户端迁移完成后再废弃。\n决议: P0 联调 deadline 顺延至 2026-04-28，原因是测试环境权限延迟开通。\n待办: 完成测试环境权限开通 负责人:user_ops 截止:2026-04-24\n待办: 权限开通后当天确认测试环境可用 负责人:user_qa 截止:2026-04-24\n待办: 完成接口联调 负责人:user_rd 截止:2026-04-28\n待办: 提交接口压测报告 负责人:user_qa 截止:2026-04-30\n待办: 更新里程碑文档，记录 deadline 延期 负责人:user_pm 截止:20",
+        "depth": 1
+      },
+      {
+        "node_id": "node_bc2cff67",
+        "source_id": "minutes_alpha_review",
+        "title": "Alpha 项目周会纪要 2026-04-21 [3]",
+        "summary": "user_qa、user_pm需在各自截止日前完成分配的待办任务。",
+        "chunk": " 提交接口压测报告 负责人:user_qa 截止:2026-04-30\n待办: 更新里程碑文档，记录 deadline 延期 负责人:user_pm 截止:2026-04-22",
+        "depth": 1
+      }
+    ]
+  },
+  {
+    "source_id": "msg_alpha_group",
+    "doc_description": "这份名为msg_alpha_group的文档，记录了团队同步测试环境权限推进进度，明确了各相关事项的时间节点。",
+    "nodes": [
+      {
+        "node_id": "node_7cff648f",
+        "source_id": "msg_alpha_group",
+        "title": "msg_alpha_group [1]",
+        "summary": "团队同步测试环境权限进度，明确各事项时间节点。",
+        "chunk": "user_rd: 测试环境还是连不上，有人知道权限申请到哪一步了吗？\nuser_ops: 在走审批，本周内应该搞定。\nuser_rd: 好，那联调这两天先做不依赖测试环境的部分。\nuser_qa: 压测方案已经准备好了，就等环境权限了。\nuser_pm: 周会 Action Items 已经记录，大家看一下有没有问题：1. 运维 4/24 开权限 2. QA 4/24 验证环境 3. 研发 4/28 完成联调 4. QA 4/30 出压测报告 5. PM 明天更新里程碑。\nuser_rd: 确认没问题。另外提醒一下，权限开通后需要同步更新一下接口文档里的测试地址。\nuser_qa: 好的，我这边也会跟进。接口字段那个 report_version 暂不下线的决定，PM 记到 PRD 里了吗？\nuser_pm: 已记，PRD 3.0 节已更新。\nuser_rd: 本地 mock 联调已经跑通，等环境权限开通就能切到真实环境。ETA 还是 4/28。\nuser_ops: 权限申请已通过审批，预计明天（4/24）下午 3 点前完成开通，会在群里通知。\nuser_rd: 好的，明天下午等通知。\nuser_qa: 收到，明天下午在线等，开通后立刻验证。",
+        "depth": 1
+      }
+    ]
+  }
+]

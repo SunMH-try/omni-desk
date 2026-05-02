@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(Start-Sleep 3)",
+      "Bash(Invoke-RestMethod \"http://localhost:8200/health\")"
+    ]
+  }
+}

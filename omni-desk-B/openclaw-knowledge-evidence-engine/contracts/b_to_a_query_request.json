@@ -1,0 +1,7 @@
+{
+  "trace_id": "trace_demo_001",
+  "project_id": "alpha_report_platform",
+  "query": "Alpha 项目周会需要关注哪些延期风险？",
+  "source_scope": ["docs", "minutes", "messages", "tasks"],
+  "top_k": 8
+}

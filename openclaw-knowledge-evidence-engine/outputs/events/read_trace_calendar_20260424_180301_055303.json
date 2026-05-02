@@ -1,0 +1,9 @@
+{
+  "source_type": "calendar",
+  "source_id": "calendar_alpha",
+  "tenant_id": "demo_tenant",
+  "project_id": "alpha_report_platform",
+  "source_count": 1,
+  "mode": "demo",
+  "timestamp": "2026-04-24T18:03:01.054303"
+}
